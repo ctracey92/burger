@@ -1,6 +1,10 @@
+//Require the model for use
 var burger = require("../models/burger.js");
+
+//Require express
 var express = require("express");
 
+//Define the router
 var router = express.Router();
 
 //Get all the burgers
@@ -44,7 +48,5 @@ router.put("/api/burgers/:id",function(req,res){
     )
 })
 
-
-
-
+//Exports to the server
 module.exports = router;
