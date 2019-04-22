@@ -1,6 +1,8 @@
 //Require the model for use
 var burger = require("../models/burger.js");
 
+console.log(burger,"this is from the controller")
+
 //Require express
 var express = require("express");
 
@@ -13,9 +15,10 @@ router.get("/",function(req,res){
         var burgerObject = {
             burgers: data
         };
-    console.log(burgerObject);  
+    console.log(burgerObject); 
+    res.render('index',burgerObject); 
     });
-    res.render('index',burgerObject);
+    
 });
 
 //Add a new burger
