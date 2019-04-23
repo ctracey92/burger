@@ -7,10 +7,10 @@ if (process.env.JAWSDB_URL){
 else {
 //Define the connection variable
 var con = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "h0usTon1",
-    database: "burgers_db"
+    host: "jsftj8ez0cevjz8v.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    user: "pi57hjicqsf9pu7k",
+    password: "s8sfm3adixdxyevi",
+    database: "du6nq577gtdgp2ir"
 });  
 };
 
