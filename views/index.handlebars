@@ -1,12 +1,24 @@
 <h1>BURGERS</h1>
 
+<ul>
+    {{#each burgers}}
+        {{#unless devoured}}
+            <li>
+                {{burger_name}} <button class="deleteBtn" attr={{id}}>Delete</button>
+            </li>
+        {{/unless}}
+    {{/each}}
+</ul>
+
 
 <ul>
     {{#each burgers}}
-    <li>{{burger_name}} burger <button class="deleteBtn" attr={{id}}>Delete</button></li> 
-    
+        {{#if devoured}} 
+            <li>{{burger_name}} burger </li>
+        {{/if}}
     {{/each}}
 </ul>
+
 
 <h3>Add a BURGER</h3>
 <form class="create-form">

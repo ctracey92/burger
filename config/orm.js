@@ -5,7 +5,7 @@ var con = require("./connection.js");
 var orm = {
 //Selects all burgers that haven't been devoured
 selectAll: function(tableName,cb){
-    var queryString = "SELECT burger_name,id FROM ?? WHERE devoured = false";
+    var queryString = "SELECT * FROM ??";
     con.query(queryString,[tableName],function(err,result){
         if (err) throw err;
         console.log(result);
