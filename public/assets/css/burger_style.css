@@ -1,0 +1,17 @@
+body {
+    background: url(../img/bobs-burgers.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.burgers{
+    background: white;
+    opacity: .8;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 20%;
+}
+
+img {
+    max-width: 100px;
+}
