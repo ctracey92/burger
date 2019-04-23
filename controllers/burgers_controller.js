@@ -23,7 +23,7 @@ router.get("/",function(req,res){
 
 //Add a new burger
 router.post("/api/burgers",function(req,res){
-    burger.insertOne([
+    burger.insert([
         "name"
     ],
     [
@@ -38,7 +38,7 @@ router.post("/api/burgers",function(req,res){
 router.put("/api/burgers/:id",function(req,res){
     var burgerId = req.params.id;
 
-    burger.updateOne(
+    burger.update(
         burgerId,function(result){
             if (result.changedRows == 0){
                 //If no changes were made 404

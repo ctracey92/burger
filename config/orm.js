@@ -9,7 +9,7 @@ selectAll: function(tableName,cb){
     con.query(queryString,[tableName],function(err,result){
         if (err) throw err;
         console.log(result);
-        cb(result)
+        cb(result);
     })
 },
 //Inserts a new burger into the db
@@ -17,18 +17,20 @@ insertOne: function(burgerName,cb){
     var queryString = "INSERT INTO burgers (burger_name,devoured) VALUES (?, false)";
     con.query(queryString,[burgerName],function(err,result){
         if (err) throw err;
-        console.log(result)
+        console.log(result);
+        cb(result);
     })
-    cb(result)
+    
 },
 //Updates a burger to devoured
 updateOne: function(burgerId,cb){
-    var queryString = "UPDATE burgers SET devoured = true WHERE id = ??";
+    var queryString = "UPDATE burgers SET devoured = true WHERE id = ?";
     con.query(queryString,[burgerId],function(err,result){
         if (err) throw err;
         console.log(result);
+        cb(result);
     });
-    cb(result)
+    
 }
 }
 
