@@ -1,1 +1,18 @@
-{{!-- THIS IS WHERE THE ACTUAL INFO WILL GO --}}
+<h1>BURGERS</h1>
+
+
+<ul>
+    {{#each burgers}}
+    <li>{{burger_name}} <button id="deleteBtn" attr={{id}}>Delete</button></li> 
+    
+    {{/each}}
+</ul>
+
+<h3>Add a BURGER</h3>
+<form class="create-form">
+    <div class="form-group">
+        <label for="burger">Burger Name:</label>
+        <input type="text" id="burger" name="name">
+    </div>
+<button id="burgerSubmit" type="submit">Add Burger</button>
+</form>
