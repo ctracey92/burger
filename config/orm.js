@@ -15,6 +15,7 @@ selectAll: function(tableName,cb){
 //Inserts a new burger into the db
 insertOne: function(burgerName,cb){
     var queryString = "INSERT INTO burgers (burger_name,devoured) VALUES (?, false)";
+    console.log(burgerName,"here is the burger name");
     con.query(queryString,[burgerName],function(err,result){
         if (err) throw err;
         console.log(result);

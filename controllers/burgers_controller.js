@@ -23,9 +23,8 @@ router.get("/",function(req,res){
 
 //Add a new burger
 router.post("/api/burgers",function(req,res){
-    burger.insert([
-        "name"
-    ],
+    console.log(req.body, "here is the req****");
+    burger.insert(
     [
         req.body.name
     ],

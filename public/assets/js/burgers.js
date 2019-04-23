@@ -16,4 +16,19 @@ $(function(){
             }
         )
     })
+//Function to add a burger
+    $("#burgerSubmit").on("click",function(event){
+        event.preventDefault();
+
+        var newBurger = {name: $("#burger").val().trim()}
+        console.log(newBurger)
+
+        $.ajax("/api/burgers",{
+            type: "POST",
+            data: newBurger
+        }).then(function(){
+            console.log("This worked, burger added");
+            location.reload();
+        })
+    })
 })

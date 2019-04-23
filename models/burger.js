@@ -8,8 +8,8 @@ var burgers = {
             cb(res);
         })
     },
-    insert: function(buggerName,cb){
-        orm.insertOne(buggerName,function(res){
+    insert: function(burgerName,cb){
+        orm.insertOne(burgerName,function(res){
             cb(res);
         })
     },
