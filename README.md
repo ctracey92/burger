@@ -1,11 +1,30 @@
-* Whenever a user submits a burger's name, your app will display the burger on the left side of the page -- waiting to be devoured.
-* Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page.
-* Your app will store every burger in a database, whether devoured or not.
+# burger
 
-#### View setup
+Student Contributors
+@ctracey92
 
-     * Setup the `index.handlebars` to have the template that Handlebars can render onto.
+* Technology
+    Javascript, Node, Mysql, Jquery, path.js, Bootstrap
 
-     * Create a button in `index.handlebars` that will submit the user input into the database.
+* About 
+    A burger app, the user inputs a burger that they want to eat which is then added to the 'to eat list' next to a devour button. When the button is clicked it moves the burger to the 'has been eaten' list. All burgers are stored within a Mysql database. 
 
-*** add in the jquery in the public folder to grab the data***
+* Objective 
+    - To create a functioning node app that uses a sql database.
+    - Demonstrate the mastery of the MVC design model, Mysql queries, ORM, and Handlebars.
+
+* Approach 
+    - The challenge was getting the MVC model set up appropriately and have each page importing/exporting to the correct location
+    - The next step was making sure that the queries and variables were consistent across all of the pages so that the correct data was flowing into the correct spot.
+    - The last step was including the user inputed data via jquery and feeding it into the loop.
+
+* Contributing Guidelines
+All contributions and suggestions are welcome! For direct contributions, please fork the repository and file a pull request.
+
+## Contact \(soon to be\) Developer/Full-stack Web Software Developer
+* Homepage: https://github.com/ctracey92/
+* e-mail: cody.tracey92@gmail.com
+* LinkedIn: https://www.linkedin.com/in/cody-tracey-353432179
+
+
+
