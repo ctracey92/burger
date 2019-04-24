@@ -14,8 +14,6 @@ var con = mysql.createConnection({
 });  
 };
 
-
-
 //Create the connection
 con.connect(function(err){
     if (err) {
